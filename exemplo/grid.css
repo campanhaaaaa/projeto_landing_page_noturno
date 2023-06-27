@@ -1,0 +1,10 @@
+.bloco{
+    background-color: coral;
+    border: 1px solid black;
+    
+}
+body{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    height: 100vh;
+}
