@@ -6,6 +6,11 @@
     outline: none;
 }
 
+/* VARIÁVEIS */
+:root{
+    --corAzul:#274083
+}
+
 body{
     font-size: arial;
     color: #fff;
@@ -23,7 +28,7 @@ header{
     grid-area: cabecalho;
 }
 .logo h1{
-    color: #274083;
+    color: var(--corAzul);
     margin-left: 10px;
 }
 .logo img{
@@ -38,7 +43,7 @@ header{
 /* MAIN */
 main{
     grid-area: principal;
-    background: linear-gradient(to right, #48a0df, #274083);
+    background: linear-gradient(to right, #48a0df, var(--corAzul));
     display: flex;
     align-items: center;
     padding-left:50px ;
@@ -70,11 +75,28 @@ main h3{
 /* ASIDE */
 aside{
     grid-area: formulario;
-    background-color: #274083;
+    background-color: var(--corAzul);
     
 }
 
 /* FOOTER */
 footer{
     grid-area: rodape;
+    background-color: #ccc;
+    color: var(--corAzul);
+    display: flex;
+    padding: 30px;
+}
+
+footer section{
+    margin: 5px 20px;
+}
+
+footer .rodape-titulo{
+    margin: 20px;
+}
+
+footer .rodape-conteudo{
+    text-align: justify;
+    line-height: 0.7cm;
 }
