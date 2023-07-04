@@ -79,6 +79,59 @@ aside{
     
 }
 
+aside h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+aside form{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+      
+    
+}
+
+aside input, aside select, aside button{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+::placeholder{
+    color: black;
+}
+
+/* aside input:focus, aside select:focus{
+    border: 3px solid #0157f6;
+    box-shadow: 0 0 10px #84abc8;
+} */
+aside:where:focus, aside slect{
+    outline: 2px solid #48a0df;
+}
+/* aside:where{input, select}:focus{outline: 2px solid #48a0df;} */
+aside button{
+    background-color: #11dd2c;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+aside button:hover{
+    box-shadow: 0 0 10px #000;
+    transition: all 0.2s linear;
+}
+
+aside small{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
 /* FOOTER */
 footer{
     grid-area: rodape;
