@@ -82,6 +82,7 @@ aside{
 aside h1{
     text-align: center;
     margin-bottom: 20px;
+    line-height: 1cm;
 }
 
 aside form{
@@ -109,7 +110,7 @@ aside input, aside select, aside button{
     border: 3px solid #0157f6;
     box-shadow: 0 0 10px #84abc8;
 } */
-aside:where:focus, aside slect{
+aside :where:focus, aside slect{
     outline: 2px solid #48a0df;
 }
 /* aside:where{input, select}:focus{outline: 2px solid #48a0df;} */
@@ -152,4 +153,54 @@ footer .rodape-titulo{
 footer .rodape-conteudo{
     text-align: justify;
     line-height: 0.7cm;
+}
+
+
+/* RESPONSITIVIDADE */
+/* TABLET */
+
+@media screen and (max-width:1200px){
+    body{
+        grid-template-columns: 100%;
+        grid-template-areas:  'cabecalho'
+                              'principal'
+                              'rodape'
+                              'formulario';
+    }
+
+    main figure{
+        margin-right: 20px;
+    }
+    main{
+        height: 50vh;
+    }
+
+
+}
+
+/* SMARTPHONE */
+
+@media screen and (max-width:750px){
+    main{
+        background: #48a0df url(../imagens/livro2.png);
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: multiply;
+        
+    }
+    
+    main figure{
+        display: none;
+    }
+
+    main h1, main h3{
+        width: 100%;
+        text-shadow: 2px 1px 2px #000;
+    }
+
+    footer{
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
